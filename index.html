@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <script src="https://code.jquery.com/jquery-3.1.0.slim.min.js" integrity="sha256-cRpWjoSOw5KcyIOaZNo4i6fZ9tKPhYYb6i5T9RSVJG8=" crossorigin="anonymous"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Crystals Collector Game</title>
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <div id="container">
+
+<!-- Section 1: Navbar-->
+<nav class="navbar navbar-default">
+    
+          <!-- Place Fluid Container in Navbar -->
+          <div class="container-fluid">
+    
+            <!-- Designate a navbar heading -->
+            <div class="navbar-header">
+    
+                  <!-- navbar button elements-->
+                  <span class="icon-bar"></span> <!-- first line -->
+                  <span class="icon-bar"></span> <!-- second line -->
+                  <span class="icon-bar"></span> <!-- third line -->
+    
+                </button>
+    
+            <!-- The links of our navbar -->
+            <div id="navbar" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="home.html">Home</a></li>
+                <li><a href="index.html">Play Game</a></li>
+    
+            <!--/.nav-collapse -->
+          </div>
+          <!--/.container-fluid -->
+        </nav>
+
+    <header>
+      <h1>Click & Win!</h1>
+    </header>
+    <br><br>
+
+    <div id="randomnumber-and-scoreboard">
+      <div id="random-number-generator">
+        <span id="random-number"></span>
+      </div>
+
+      <div id="score-board">
+        <span id="win-or-lose"></span>
+        <br>
+        <p>Wins: <span id="win-counter">0</span></p>
+        <p>Losses: <span id="loss-counter">0</span></p>
+      </div>
+    </div>
+
+    <div id="fruit">
+      <img id="diamond" src="assets/images/diamond.jpg" alt="diamond" onclick="userImageScore(this)">
+      <img id="circle" src="assets/images/circle.jpg" alt="circle" onclick="userImageScore(this)">
+      <img id="square" src="assets/images/square.jpg" alt="square" onclick="userImageScore(this)">
+      <img id="triangle" src="assets/images/triangle.jpg" alt="triangle" onclick="userImageScore(this)">
+    </div>
+
+    <div id="current-score">
+      <h1>Your total score is:</h1>
+      <span id="current-score-counter"></span>
+    </div>
+  </div>
+
+
+
+
+<script type="text/javascript" src="assets/js/game.js"></script>
+</body>
+</html>
